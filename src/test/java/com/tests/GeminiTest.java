@@ -35,12 +35,8 @@ public class GeminiTest {
         driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.viewpager.widget.ViewPager/android.support.v7.widget.RecyclerView/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.Button")).click();
         Thread.sleep(10000);
         System.out.println("image created");*/
-        
-        
      // Print all clickable texts and descriptions
-        driver.findElement(
-        	    By.id("com.google.android.googlequicksearchbox:id/gemini_chat_input_plus_btn"))
-        	    .click();
+        driver.findElement(By.id("com.google.android.googlequicksearchbox:id/gemini_chat_input_plus_btn")).click();
 
         	Thread.sleep(3000);
 

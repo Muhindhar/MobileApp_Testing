@@ -43,12 +43,12 @@ public class CalculatorTest {
         Thread.sleep(3000);
 
         String result = driver.findElement(
-                By.id("com.transsion.calculator:id/result"))
-                .getAttribute("content-desc");
+        By.id("com.transsion.calculator:id/result"))
+        .getText();
 
-        System.out.println("Result = " + result);
+System.out.println("Result = " + result);
 
-        Assert.assertTrue(result.contains("19"), "Calculator result mismatch!");
+Assert.assertEquals(result.trim(), "19", "Calculator result mismatch!");
     }
 
     @AfterClass
